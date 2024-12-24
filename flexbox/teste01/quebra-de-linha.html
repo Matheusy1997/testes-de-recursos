@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quebra de Linha</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        div#container{
+            background-color: black;
+            height: 70vh;
+            width: 70vw;
+            display: flex;
+            justify-content: flex-start;
+            
+            flex-flow: row wrap;
+            align-content: center;
+        }
+        div.itens{
+            margin: 20px;
+            height: 60px;
+            background-color: red;
+            border: 1px solid white;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 3em;
+            flex: 0 0 80px;
+        }
+
+       /* div.itens:first-child{
+            
+        } */
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="itens">1</div>
+        <div class="itens">2</div>
+        <div class="itens">3</div>
+        <div class="itens">4</div>
+        <div class="itens">5</div>
+        <div class="itens">6</div>
+        <div class="itens">7</div>
+        <div class="itens">8</div>
+    </div>
+</body>
+</html>
