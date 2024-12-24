@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+        html{
+            height: 100vh;
+            width: 100vw;
+        }
+      #field {
+        margin: auto;
+        height: 70vh;
+        width: 650px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        column-gap: 15px;
+        row-gap: 40px;
+        /* type here */
+      }
+
+      div.redLand{
+        border: 1px solid black;
+        background-color: red;
+      }
+
+      div.greenLand{
+        border: 1px solid black;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="field">
+      <div class="redLand"></div>
+      <div class="greenLand"></div>
+      <div class="greenLand"></div>
+      <div class="greenLand"></div>
+      <div class="greenLand"></div>
+      <div class="redLand"></div>
+    </div>
+  </body>
+</html>
